@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Square = args => {
+const Square = ({ value, onClick }) => {
   return (
-    <button type="button" className="square">
-      {args.value}
+    <button type="button" className="square" onClick={onClick}>
+      {value}
     </button>
   );
 };
